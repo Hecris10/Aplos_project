@@ -1,0 +1,8 @@
+{
+  "total_customers": 996,
+  "active_customers": 264,
+  "churned_customers": 732,
+  "churn_rate": 0.7349397590361446,
+  "avg_customer_value": 3524.0516365461845,
+  "avg_order_value": 712.7012951807229
+}

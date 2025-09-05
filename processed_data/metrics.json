@@ -1,0 +1,786 @@
+{
+  "revenue_by_region": {
+    "Central": {
+      "total_revenue": 624149.75,
+      "total_sales": 823,
+      "avg_order_value": 758.38
+    },
+    "East": {
+      "total_revenue": 673923.07,
+      "total_sales": 993,
+      "avg_order_value": 678.67
+    },
+    "North": {
+      "total_revenue": 892655.61,
+      "total_sales": 1279,
+      "avg_order_value": 697.93
+    },
+    "South": {
+      "total_revenue": 595433.35,
+      "total_sales": 873,
+      "avg_order_value": 682.05
+    },
+    "West": {
+      "total_revenue": 723793.65,
+      "total_sales": 1032,
+      "avg_order_value": 701.35
+    }
+  },
+  "top_products": [
+    {
+      "product_id": 66,
+      "name": "Electronics Product 66",
+      "category": "Electronics",
+      "total_quantity_sold": 55,
+      "total_revenue": 94904.21,
+      "number_of_sales": 21
+    },
+    {
+      "product_id": 198,
+      "name": "Electronics Product 198",
+      "category": "Electronics",
+      "total_quantity_sold": 56,
+      "total_revenue": 89613.6,
+      "number_of_sales": 29
+    },
+    {
+      "product_id": 33,
+      "name": "Electronics Product 33",
+      "category": "Electronics",
+      "total_quantity_sold": 59,
+      "total_revenue": 87130.64,
+      "number_of_sales": 38
+    },
+    {
+      "product_id": 154,
+      "name": "Automotive Product 154",
+      "category": "Automotive",
+      "total_quantity_sold": 74,
+      "total_revenue": 86393.02,
+      "number_of_sales": 35
+    },
+    {
+      "product_id": 135,
+      "name": "Electronics Product 135",
+      "category": "Electronics",
+      "total_quantity_sold": 55,
+      "total_revenue": 83683.63,
+      "number_of_sales": 28
+    },
+    {
+      "product_id": 173,
+      "name": "Automotive Product 173",
+      "category": "Automotive",
+      "total_quantity_sold": 63,
+      "total_revenue": 80936.05,
+      "number_of_sales": 30
+    },
+    {
+      "product_id": 119,
+      "name": "Electronics Product 119",
+      "category": "Electronics",
+      "total_quantity_sold": 59,
+      "total_revenue": 68929.74,
+      "number_of_sales": 26
+    },
+    {
+      "product_id": 191,
+      "name": "Electronics Product 191",
+      "category": "Electronics",
+      "total_quantity_sold": 41,
+      "total_revenue": 65427.6,
+      "number_of_sales": 22
+    },
+    {
+      "product_id": 23,
+      "name": "Automotive Product 23",
+      "category": "Automotive",
+      "total_quantity_sold": 54,
+      "total_revenue": 58143.12,
+      "number_of_sales": 29
+    },
+    {
+      "product_id": 181,
+      "name": "Electronics Product 181",
+      "category": "Electronics",
+      "total_quantity_sold": 48,
+      "total_revenue": 58024.63,
+      "number_of_sales": 22
+    },
+    {
+      "product_id": 97,
+      "name": "Electronics Product 97",
+      "category": "Electronics",
+      "total_quantity_sold": 42,
+      "total_revenue": 56661.79,
+      "number_of_sales": 26
+    },
+    {
+      "product_id": 94,
+      "name": "Electronics Product 94",
+      "category": "Electronics",
+      "total_quantity_sold": 52,
+      "total_revenue": 55736.71,
+      "number_of_sales": 32
+    },
+    {
+      "product_id": 132,
+      "name": "Electronics Product 132",
+      "category": "Electronics",
+      "total_quantity_sold": 48,
+      "total_revenue": 55682.34,
+      "number_of_sales": 19
+    },
+    {
+      "product_id": 47,
+      "name": "Automotive Product 47",
+      "category": "Automotive",
+      "total_quantity_sold": 45,
+      "total_revenue": 54038.45,
+      "number_of_sales": 23
+    },
+    {
+      "product_id": 190,
+      "name": "Automotive Product 190",
+      "category": "Automotive",
+      "total_quantity_sold": 54,
+      "total_revenue": 52269.07,
+      "number_of_sales": 25
+    },
+    {
+      "product_id": 61,
+      "name": "Electronics Product 61",
+      "category": "Electronics",
+      "total_quantity_sold": 62,
+      "total_revenue": 50286.47,
+      "number_of_sales": 34
+    },
+    {
+      "product_id": 143,
+      "name": "Automotive Product 143",
+      "category": "Automotive",
+      "total_quantity_sold": 44,
+      "total_revenue": 49395.7,
+      "number_of_sales": 23
+    },
+    {
+      "product_id": 39,
+      "name": "Automotive Product 39",
+      "category": "Automotive",
+      "total_quantity_sold": 54,
+      "total_revenue": 49179.52,
+      "number_of_sales": 32
+    },
+    {
+      "product_id": 26,
+      "name": "Electronics Product 26",
+      "category": "Electronics",
+      "total_quantity_sold": 43,
+      "total_revenue": 47921.84,
+      "number_of_sales": 24
+    },
+    {
+      "product_id": 128,
+      "name": "Electronics Product 128",
+      "category": "Electronics",
+      "total_quantity_sold": 32,
+      "total_revenue": 46957.76,
+      "number_of_sales": 20
+    }
+  ],
+  "category_performance": {
+    "Electronics": {
+      "total_revenue": 1325150.62,
+      "avg_order_value": 1454.61,
+      "total_quantity": 1729,
+      "number_of_sales": 911
+    },
+    "Automotive": {
+      "total_revenue": 920295.33,
+      "avg_order_value": 1238.62,
+      "total_quantity": 1382,
+      "number_of_sales": 743
+    },
+    "Home & Garden": {
+      "total_revenue": 520896.83,
+      "avg_order_value": 656.04,
+      "total_quantity": 1469,
+      "number_of_sales": 794
+    },
+    "Sports": {
+      "total_revenue": 397037.52,
+      "avg_order_value": 611.77,
+      "total_quantity": 1216,
+      "number_of_sales": 649
+    },
+    "Fashion": {
+      "total_revenue": 202113.35,
+      "avg_order_value": 347.87,
+      "total_quantity": 1146,
+      "number_of_sales": 581
+    },
+    "Beauty": {
+      "total_revenue": 113468.31,
+      "avg_order_value": 191.35,
+      "total_quantity": 1149,
+      "number_of_sales": 593
+    },
+    "Books": {
+      "total_revenue": 30993.47,
+      "avg_order_value": 42.52,
+      "total_quantity": 1369,
+      "number_of_sales": 729
+    }
+  },
+  "customer_metrics_summary": {
+    "total_customers": 996,
+    "active_customers": 264,
+    "churned_customers": 732,
+    "churn_rate": 0.7349397590361446,
+    "avg_customer_value": 3524.0516365461845,
+    "avg_order_value": 712.7012951807229
+  },
+  "age_group_analysis": {
+    "18-25": {
+      "avg_spent": 3167.92,
+      "total_spent": 487859.36,
+      "avg_orders": 4.81,
+      "churn_rate": 0.7
+    },
+    "26-35": {
+      "avg_spent": 3447.14,
+      "total_spent": 737688.95,
+      "avg_orders": 5.08,
+      "churn_rate": 0.74
+    },
+    "36-50": {
+      "avg_spent": 3550.06,
+      "total_spent": 1388075.18,
+      "avg_orders": 4.99,
+      "churn_rate": 0.72
+    },
+    "51-65": {
+      "avg_spent": 3748.56,
+      "total_spent": 719723.42,
+      "avg_orders": 5.1,
+      "churn_rate": 0.78
+    },
+    "65+": {
+      "avg_spent": 3924.63,
+      "total_spent": 176608.52,
+      "avg_orders": 5.4,
+      "churn_rate": 0.78
+    }
+  },
+  "inventory_insights": {
+    "low_stock_products": [
+      {
+        "product_id": 1,
+        "name": "Sports Product 1",
+        "category": "Sports",
+        "current_stock": 60,
+        "reorder_level": 65,
+        "turnover_rate": 4.89
+      },
+      {
+        "product_id": 4,
+        "name": "Sports Product 4",
+        "category": "Sports",
+        "current_stock": 56,
+        "reorder_level": 83,
+        "turnover_rate": 7.62
+      },
+      {
+        "product_id": 6,
+        "name": "Beauty Product 6",
+        "category": "Beauty",
+        "current_stock": 7,
+        "reorder_level": 21,
+        "turnover_rate": 13.02
+      },
+      {
+        "product_id": 7,
+        "name": "Home & Garden Product 7",
+        "category": "Home & Garden",
+        "current_stock": 20,
+        "reorder_level": 34,
+        "turnover_rate": 3.12
+      },
+      {
+        "product_id": 8,
+        "name": "Beauty Product 8",
+        "category": "Beauty",
+        "current_stock": 16,
+        "reorder_level": 24,
+        "turnover_rate": 12.65
+      },
+      {
+        "product_id": 29,
+        "name": "Books Product 29",
+        "category": "Books",
+        "current_stock": 10,
+        "reorder_level": 13,
+        "turnover_rate": 7.22
+      },
+      {
+        "product_id": 32,
+        "name": "Beauty Product 32",
+        "category": "Beauty",
+        "current_stock": 0,
+        "reorder_level": 2,
+        "turnover_rate": 8.6
+      },
+      {
+        "product_id": 34,
+        "name": "Sports Product 34",
+        "category": "Sports",
+        "current_stock": 9,
+        "reorder_level": 9,
+        "turnover_rate": 4.55
+      },
+      {
+        "product_id": 36,
+        "name": "Beauty Product 36",
+        "category": "Beauty",
+        "current_stock": 8,
+        "reorder_level": 24,
+        "turnover_rate": 14.92
+      },
+      {
+        "product_id": 38,
+        "name": "Fashion Product 38",
+        "category": "Fashion",
+        "current_stock": 31,
+        "reorder_level": 35,
+        "turnover_rate": 13.28
+      },
+      {
+        "product_id": 45,
+        "name": "Beauty Product 45",
+        "category": "Beauty",
+        "current_stock": 6,
+        "reorder_level": 99,
+        "turnover_rate": 8.21
+      },
+      {
+        "product_id": 55,
+        "name": "Electronics Product 55",
+        "category": "Electronics",
+        "current_stock": 0,
+        "reorder_level": 3,
+        "turnover_rate": 13.43
+      },
+      {
+        "product_id": 59,
+        "name": "Sports Product 59",
+        "category": "Sports",
+        "current_stock": 27,
+        "reorder_level": 89,
+        "turnover_rate": 6.67
+      },
+      {
+        "product_id": 68,
+        "name": "Sports Product 68",
+        "category": "Sports",
+        "current_stock": 5,
+        "reorder_level": 52,
+        "turnover_rate": 3.15
+      },
+      {
+        "product_id": 70,
+        "name": "Electronics Product 70",
+        "category": "Electronics",
+        "current_stock": 2,
+        "reorder_level": 7,
+        "turnover_rate": 12.46
+      },
+      {
+        "product_id": 80,
+        "name": "Fashion Product 80",
+        "category": "Fashion",
+        "current_stock": 73,
+        "reorder_level": 86,
+        "turnover_rate": 9.98
+      },
+      {
+        "product_id": 81,
+        "name": "Beauty Product 81",
+        "category": "Beauty",
+        "current_stock": 7,
+        "reorder_level": 14,
+        "turnover_rate": 13.44
+      },
+      {
+        "product_id": 91,
+        "name": "Fashion Product 91",
+        "category": "Fashion",
+        "current_stock": 11,
+        "reorder_level": 73,
+        "turnover_rate": 13.64
+      },
+      {
+        "product_id": 93,
+        "name": "Home & Garden Product 93",
+        "category": "Home & Garden",
+        "current_stock": 11,
+        "reorder_level": 16,
+        "turnover_rate": 5.67
+      },
+      {
+        "product_id": 96,
+        "name": "Home & Garden Product 96",
+        "category": "Home & Garden",
+        "current_stock": 18,
+        "reorder_level": 44,
+        "turnover_rate": 6.44
+      },
+      {
+        "product_id": 99,
+        "name": "Home & Garden Product 99",
+        "category": "Home & Garden",
+        "current_stock": 53,
+        "reorder_level": 84,
+        "turnover_rate": 5.44
+      },
+      {
+        "product_id": 102,
+        "name": "Home & Garden Product 102",
+        "category": "Home & Garden",
+        "current_stock": 49,
+        "reorder_level": 71,
+        "turnover_rate": 4.97
+      },
+      {
+        "product_id": 105,
+        "name": "Automotive Product 105",
+        "category": "Automotive",
+        "current_stock": 0,
+        "reorder_level": 9,
+        "turnover_rate": 3.15
+      },
+      {
+        "product_id": 107,
+        "name": "Sports Product 107",
+        "category": "Sports",
+        "current_stock": 2,
+        "reorder_level": 4,
+        "turnover_rate": 7.56
+      },
+      {
+        "product_id": 111,
+        "name": "Books Product 111",
+        "category": "Books",
+        "current_stock": 1,
+        "reorder_level": 8,
+        "turnover_rate": 7.46
+      },
+      {
+        "product_id": 117,
+        "name": "Beauty Product 117",
+        "category": "Beauty",
+        "current_stock": 17,
+        "reorder_level": 35,
+        "turnover_rate": 10.15
+      },
+      {
+        "product_id": 122,
+        "name": "Books Product 122",
+        "category": "Books",
+        "current_stock": 0,
+        "reorder_level": 2,
+        "turnover_rate": 5.08
+      },
+      {
+        "product_id": 123,
+        "name": "Fashion Product 123",
+        "category": "Fashion",
+        "current_stock": 45,
+        "reorder_level": 89,
+        "turnover_rate": 11.95
+      },
+      {
+        "product_id": 135,
+        "name": "Electronics Product 135",
+        "category": "Electronics",
+        "current_stock": 48,
+        "reorder_level": 90,
+        "turnover_rate": 11.29
+      },
+      {
+        "product_id": 137,
+        "name": "Fashion Product 137",
+        "category": "Fashion",
+        "current_stock": 80,
+        "reorder_level": 82,
+        "turnover_rate": 10.92
+      },
+      {
+        "product_id": 147,
+        "name": "Home & Garden Product 147",
+        "category": "Home & Garden",
+        "current_stock": 42,
+        "reorder_level": 80,
+        "turnover_rate": 6.43
+      },
+      {
+        "product_id": 149,
+        "name": "Beauty Product 149",
+        "category": "Beauty",
+        "current_stock": 5,
+        "reorder_level": 22,
+        "turnover_rate": 8.43
+      },
+      {
+        "product_id": 152,
+        "name": "Beauty Product 152",
+        "category": "Beauty",
+        "current_stock": 23,
+        "reorder_level": 94,
+        "turnover_rate": 13.31
+      },
+      {
+        "product_id": 167,
+        "name": "Electronics Product 167",
+        "category": "Electronics",
+        "current_stock": 1,
+        "reorder_level": 3,
+        "turnover_rate": 9.97
+      },
+      {
+        "product_id": 170,
+        "name": "Home & Garden Product 170",
+        "category": "Home & Garden",
+        "current_stock": 28,
+        "reorder_level": 68,
+        "turnover_rate": 4.87
+      },
+      {
+        "product_id": 174,
+        "name": "Electronics Product 174",
+        "category": "Electronics",
+        "current_stock": 17,
+        "reorder_level": 46,
+        "turnover_rate": 11.19
+      },
+      {
+        "product_id": 178,
+        "name": "Fashion Product 178",
+        "category": "Fashion",
+        "current_stock": 26,
+        "reorder_level": 39,
+        "turnover_rate": 12.1
+      },
+      {
+        "product_id": 181,
+        "name": "Electronics Product 181",
+        "category": "Electronics",
+        "current_stock": 0,
+        "reorder_level": 52,
+        "turnover_rate": 12.73
+      },
+      {
+        "product_id": 184,
+        "name": "Fashion Product 184",
+        "category": "Fashion",
+        "current_stock": 64,
+        "reorder_level": 72,
+        "turnover_rate": 9.97
+      },
+      {
+        "product_id": 186,
+        "name": "Home & Garden Product 186",
+        "category": "Home & Garden",
+        "current_stock": 43,
+        "reorder_level": 53,
+        "turnover_rate": 6.82
+      },
+      {
+        "product_id": 187,
+        "name": "Books Product 187",
+        "category": "Books",
+        "current_stock": 19,
+        "reorder_level": 78,
+        "turnover_rate": 5.66
+      },
+      {
+        "product_id": 190,
+        "name": "Automotive Product 190",
+        "category": "Automotive",
+        "current_stock": 84,
+        "reorder_level": 89,
+        "turnover_rate": 4.72
+      },
+      {
+        "product_id": 193,
+        "name": "Automotive Product 193",
+        "category": "Automotive",
+        "current_stock": 22,
+        "reorder_level": 26,
+        "turnover_rate": 4.69
+      },
+      {
+        "product_id": 197,
+        "name": "Sports Product 197",
+        "category": "Sports",
+        "current_stock": 82,
+        "reorder_level": 89,
+        "turnover_rate": 7.99
+      }
+    ],
+    "total_products_at_risk": 44,
+    "turnover_by_category": {
+      "Automotive": {
+        "avg_turnover": 5.49,
+        "min_turnover": 3.15,
+        "max_turnover": 7.59
+      },
+      "Beauty": {
+        "avg_turnover": 11.84,
+        "min_turnover": 8.19,
+        "max_turnover": 14.92
+      },
+      "Books": {
+        "avg_turnover": 5.76,
+        "min_turnover": 3.24,
+        "max_turnover": 8.0
+      },
+      "Electronics": {
+        "avg_turnover": 11.04,
+        "min_turnover": 8.08,
+        "max_turnover": 14.41
+      },
+      "Fashion": {
+        "avg_turnover": 12.02,
+        "min_turnover": 8.37,
+        "max_turnover": 14.89
+      },
+      "Home & Garden": {
+        "avg_turnover": 5.28,
+        "min_turnover": 3.12,
+        "max_turnover": 7.75
+      },
+      "Sports": {
+        "avg_turnover": 5.66,
+        "min_turnover": 3.13,
+        "max_turnover": 7.99
+      }
+    }
+  },
+  "monthly_trends": [
+    {
+      "year_month": "2024-09",
+      "revenue": 754710.26,
+      "quantity_sold": 1988,
+      "number_of_sales": 1069
+    },
+    {
+      "year_month": "2024-10",
+      "revenue": 736952.37,
+      "quantity_sold": 2024,
+      "number_of_sales": 1029
+    },
+    {
+      "year_month": "2024-11",
+      "revenue": 538353.14,
+      "quantity_sold": 1408,
+      "number_of_sales": 765
+    },
+    {
+      "year_month": "2024-12",
+      "revenue": 392183.1,
+      "quantity_sold": 1044,
+      "number_of_sales": 558
+    },
+    {
+      "year_month": "2025-01",
+      "revenue": 253890.8,
+      "quantity_sold": 783,
+      "number_of_sales": 424
+    },
+    {
+      "year_month": "2025-02",
+      "revenue": 212270.9,
+      "quantity_sold": 558,
+      "number_of_sales": 284
+    },
+    {
+      "year_month": "2025-03",
+      "revenue": 149921.69,
+      "quantity_sold": 450,
+      "number_of_sales": 241
+    },
+    {
+      "year_month": "2025-04",
+      "revenue": 101262.67,
+      "quantity_sold": 311,
+      "number_of_sales": 164
+    },
+    {
+      "year_month": "2025-05",
+      "revenue": 108415.54,
+      "quantity_sold": 251,
+      "number_of_sales": 135
+    },
+    {
+      "year_month": "2025-06",
+      "revenue": 77942.96,
+      "quantity_sold": 175,
+      "number_of_sales": 94
+    },
+    {
+      "year_month": "2025-07",
+      "revenue": 74291.35,
+      "quantity_sold": 148,
+      "number_of_sales": 70
+    },
+    {
+      "year_month": "2025-08",
+      "revenue": 15396.02,
+      "quantity_sold": 76,
+      "number_of_sales": 33
+    },
+    {
+      "year_month": "2025-09",
+      "revenue": 94364.63,
+      "quantity_sold": 244,
+      "number_of_sales": 134
+    }
+  ],
+  "business_insights": [
+    {
+      "title": "Regional Performance Leader",
+      "description": "The North region generates $892,655.61 in revenue, which is 27.2% above the average region performance.",
+      "recommendation": "Consider expanding marketing efforts or inventory allocation in the North region.",
+      "impact": "High",
+      "category": "Regional Analysis"
+    },
+    {
+      "title": "Category Dominance",
+      "description": "Electronics represents 37.8% of total revenue ($1,325,150.62).",
+      "recommendation": "Maintain strong inventory levels for Electronics products and consider expanding this category.",
+      "impact": "High",
+      "category": "Category Performance"
+    },
+    {
+      "title": "High-Value Customer Segment",
+      "description": "Customers aged 65+ have the highest average spending at $3,924.63 per customer.",
+      "recommendation": "Develop targeted marketing campaigns for the 65+ age group to maximize revenue.",
+      "impact": "Medium",
+      "category": "Customer Segmentation"
+    },
+    {
+      "title": "Inventory Risk Alert",
+      "description": "44 products are at or below reorder levels, with Beauty being the most affected category.",
+      "recommendation": "Immediate reordering required for critical stock items to prevent stockouts.",
+      "impact": "Critical",
+      "category": "Inventory Management"
+    },
+    {
+      "title": "Customer Retention Concern",
+      "description": "Customer churn rate is 73.5%, indicating potential retention issues.",
+      "recommendation": "Implement customer retention programs and analyze reasons for customer inactivity.",
+      "impact": "High",
+      "category": "Customer Retention"
+    }
+  ]
+}

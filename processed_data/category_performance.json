@@ -1,0 +1,44 @@
+{
+  "Electronics": {
+    "total_revenue": 1325150.62,
+    "avg_order_value": 1454.61,
+    "total_quantity": 1729,
+    "number_of_sales": 911
+  },
+  "Automotive": {
+    "total_revenue": 920295.33,
+    "avg_order_value": 1238.62,
+    "total_quantity": 1382,
+    "number_of_sales": 743
+  },
+  "Home & Garden": {
+    "total_revenue": 520896.83,
+    "avg_order_value": 656.04,
+    "total_quantity": 1469,
+    "number_of_sales": 794
+  },
+  "Sports": {
+    "total_revenue": 397037.52,
+    "avg_order_value": 611.77,
+    "total_quantity": 1216,
+    "number_of_sales": 649
+  },
+  "Fashion": {
+    "total_revenue": 202113.35,
+    "avg_order_value": 347.87,
+    "total_quantity": 1146,
+    "number_of_sales": 581
+  },
+  "Beauty": {
+    "total_revenue": 113468.31,
+    "avg_order_value": 191.35,
+    "total_quantity": 1149,
+    "number_of_sales": 593
+  },
+  "Books": {
+    "total_revenue": 30993.47,
+    "avg_order_value": 42.52,
+    "total_quantity": 1369,
+    "number_of_sales": 729
+  }
+}

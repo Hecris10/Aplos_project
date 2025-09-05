@@ -1,0 +1,201 @@
+id,name,category,price,supplier,created_at
+1,Sports Product 1,Sports,524.42,FashionPlus,2025-05-14
+2,Electronics Product 2,Electronics,99.03,AutoParts,2024-12-24
+3,Automotive Product 3,Automotive,150.84,BookLand,2024-10-30
+4,Sports Product 4,Sports,292.05,AutoParts,2025-02-12
+5,Electronics Product 5,Electronics,714.59,SportZone,2024-09-29
+6,Beauty Product 6,Beauty,42.41,BeautyWorld,2025-07-01
+7,Home & Garden Product 7,Home & Garden,364.52,TechCorp,2025-03-28
+8,Beauty Product 8,Beauty,131.53,AutoParts,2024-09-14
+9,Automotive Product 9,Automotive,223.59,SportZone,2025-04-21
+10,Books Product 10,Books,41.04,HomeBase,2025-03-13
+11,Books Product 11,Books,19.03,FashionPlus,2025-03-23
+12,Home & Garden Product 12,Home & Garden,598.72,TechCorp,2025-08-03
+13,Automotive Product 13,Automotive,628.25,BookLand,2024-12-05
+14,Electronics Product 14,Electronics,55.7,BeautyWorld,2025-02-16
+15,Sports Product 15,Sports,372.34,HomeBase,2025-05-24
+16,Home & Garden Product 16,Home & Garden,232.3,TechCorp,2025-08-24
+17,Electronics Product 17,Electronics,696.13,TechCorp,2025-02-05
+18,Home & Garden Product 18,Home & Garden,168.94,HomeBase,2024-11-20
+19,Beauty Product 19,Beauty,100.11,TechCorp,2025-08-28
+20,Beauty Product 20,Beauty,112.03,TechCorp,2025-08-01
+21,Books Product 21,Books,10.08,HomeBase,2024-10-19
+22,Sports Product 22,Sports,87.11,FashionPlus,2024-09-27
+23,Automotive Product 23,Automotive,1209.8,TechCorp,2024-11-10
+24,Books Product 24,Books,24.67,BookLand,2024-12-22
+25,Books Product 25,Books,19.67,BeautyWorld,2025-06-19
+26,Electronics Product 26,Electronics,1253.28,BeautyWorld,2025-03-22
+27,Home & Garden Product 27,Home & Garden,705.69,AutoParts,2025-02-03
+28,Electronics Product 28,Electronics,107.85,HomeBase,2025-04-05
+29,Books Product 29,Books,49.7,BeautyWorld,2024-11-14
+30,Automotive Product 30,Automotive,433.86,TechCorp,2025-03-17
+31,Sports Product 31,Sports,444.67,BeautyWorld,2024-09-10
+32,Beauty Product 32,Beauty,59.05,BeautyWorld,2024-12-31
+33,Electronics Product 33,Electronics,1656.39,AutoParts,2024-10-25
+34,Sports Product 34,Sports,497.19,TechCorp,2024-11-10
+35,Home & Garden Product 35,Home & Garden,16.65,BookLand,2025-07-10
+36,Beauty Product 36,Beauty,167.62,TechCorp,2025-08-07
+37,Automotive Product 37,Automotive,1311.25,FashionPlus,2025-04-13
+38,Fashion Product 38,Fashion,339.34,TechCorp,2024-11-08
+39,Automotive Product 39,Automotive,1004.12,BeautyWorld,2025-02-16
+40,Home & Garden Product 40,Home & Garden,483.11,SportZone,2024-12-26
+41,Electronics Product 41,Electronics,188.46,FashionPlus,2025-06-18
+42,Home & Garden Product 42,Home & Garden,293.5,AutoParts,2024-12-26
+43,Fashion Product 43,Fashion,340.91,TechCorp,2025-06-24
+44,Fashion Product 44,Fashion,193.72,HomeBase,2025-03-29
+45,Beauty Product 45,Beauty,11.92,FashionPlus,2025-03-04
+46,Home & Garden Product 46,Home & Garden,731.93,TechCorp,2025-01-08
+47,Automotive Product 47,Automotive,1314.34,SportZone,2025-07-08
+48,Books Product 48,Books,13.06,FashionPlus,2025-08-18
+49,Beauty Product 49,Beauty,22.62,BookLand,2024-12-03
+50,Fashion Product 50,Fashion,25.62,BookLand,2025-01-05
+51,Sports Product 51,Sports,194.65,TechCorp,2025-02-01
+52,Automotive Product 52,Automotive,878.48,FashionPlus,2024-10-13
+53,Beauty Product 53,Beauty,33.37,TechCorp,2025-03-14
+54,Automotive Product 54,Automotive,534.46,AutoParts,2025-04-18
+55,Electronics Product 55,Electronics,181.4,BeautyWorld,2025-02-24
+56,Books Product 56,Books,43.78,SportZone,2025-08-29
+57,Home & Garden Product 57,Home & Garden,75.93,TechCorp,2024-12-18
+58,Beauty Product 58,Beauty,173.73,BookLand,2025-06-09
+59,Sports Product 59,Sports,155.11,HomeBase,2025-05-01
+60,Home & Garden Product 60,Home & Garden,688.19,AutoParts,2025-04-05
+61,Electronics Product 61,Electronics,890.42,HomeBase,2024-10-17
+62,Fashion Product 62,Fashion,197.63,BookLand,2025-01-16
+63,Sports Product 63,Sports,250.96,AutoParts,2024-09-11
+64,Fashion Product 64,Fashion,100.09,BeautyWorld,2025-05-23
+65,Automotive Product 65,Automotive,239.61,TechCorp,2025-05-10
+66,Electronics Product 66,Electronics,1895.96,HomeBase,2025-06-23
+67,Beauty Product 67,Beauty,108.28,FashionPlus,2025-08-30
+68,Sports Product 68,Sports,28.86,AutoParts,2025-05-28
+69,Automotive Product 69,Automotive,1193.83,HomeBase,2025-08-28
+70,Electronics Product 70,Electronics,247.46,BeautyWorld,2025-03-14
+71,Fashion Product 71,Fashion,424.03,SportZone,2025-07-27
+72,Books Product 72,Books,27.07,SportZone,2025-07-16
+73,Electronics Product 73,Electronics,324.08,BeautyWorld,2025-05-04
+74,Books Product 74,Books,9.16,HomeBase,2025-06-03
+75,Home & Garden Product 75,Home & Garden,771.75,SportZone,2025-08-02
+76,Fashion Product 76,Fashion,38.72,BookLand,2024-10-06
+77,Home & Garden Product 77,Home & Garden,319.57,FashionPlus,2025-07-31
+78,Home & Garden Product 78,Home & Garden,33.33,HomeBase,2025-04-29
+79,Beauty Product 79,Beauty,97.12,BookLand,2025-06-22
+80,Fashion Product 80,Fashion,452.04,BeautyWorld,2024-10-19
+81,Beauty Product 81,Beauty,191.62,BeautyWorld,2025-04-18
+82,Home & Garden Product 82,Home & Garden,712.4,SportZone,2025-05-13
+83,Fashion Product 83,Fashion,416.82,TechCorp,2025-07-26
+84,Beauty Product 84,Beauty,64.8,AutoParts,2025-04-01
+85,Books Product 85,Books,24.36,BeautyWorld,2024-11-29
+86,Books Product 86,Books,30.74,BeautyWorld,2025-06-29
+87,Electronics Product 87,Electronics,1129.74,FashionPlus,2025-01-03
+88,Beauty Product 88,Beauty,154.76,HomeBase,2025-04-29
+89,Automotive Product 89,Automotive,677.45,FashionPlus,2025-04-13
+90,Fashion Product 90,Fashion,144.48,HomeBase,2025-05-26
+91,Fashion Product 91,Fashion,47.67,BookLand,2025-02-16
+92,Automotive Product 92,Automotive,427.26,SportZone,2025-06-03
+93,Home & Garden Product 93,Home & Garden,452.8,HomeBase,2025-02-23
+94,Electronics Product 94,Electronics,1181.91,BeautyWorld,2025-06-15
+95,Home & Garden Product 95,Home & Garden,133.16,FashionPlus,2025-07-26
+96,Home & Garden Product 96,Home & Garden,177.74,BeautyWorld,2024-12-29
+97,Electronics Product 97,Electronics,1482.43,FashionPlus,2024-11-11
+98,Books Product 98,Books,31.91,FashionPlus,2025-02-15
+99,Home & Garden Product 99,Home & Garden,173.03,BeautyWorld,2025-08-09
+100,Sports Product 100,Sports,515.22,BeautyWorld,2025-08-05
+101,Sports Product 101,Sports,546.49,AutoParts,2025-08-01
+102,Home & Garden Product 102,Home & Garden,728.92,HomeBase,2024-11-17
+103,Books Product 103,Books,30.4,SportZone,2025-07-10
+104,Books Product 104,Books,13.49,HomeBase,2025-06-22
+105,Automotive Product 105,Automotive,213.49,TechCorp,2025-08-03
+106,Sports Product 106,Sports,293.4,FashionPlus,2024-09-07
+107,Sports Product 107,Sports,582.52,HomeBase,2025-01-04
+108,Home & Garden Product 108,Home & Garden,417.63,SportZone,2025-05-12
+109,Sports Product 109,Sports,458.91,BookLand,2024-11-10
+110,Automotive Product 110,Automotive,474.6,SportZone,2025-03-01
+111,Books Product 111,Books,29.94,BookLand,2024-10-13
+112,Automotive Product 112,Automotive,598.21,HomeBase,2024-12-20
+113,Electronics Product 113,Electronics,756.42,TechCorp,2024-12-31
+114,Home & Garden Product 114,Home & Garden,717.15,HomeBase,2025-08-15
+115,Fashion Product 115,Fashion,232.86,AutoParts,2025-08-16
+116,Automotive Product 116,Automotive,899.37,AutoParts,2025-02-03
+117,Beauty Product 117,Beauty,100.53,AutoParts,2025-05-24
+118,Electronics Product 118,Electronics,165.97,BeautyWorld,2025-06-14
+119,Electronics Product 119,Electronics,1298.39,TechCorp,2024-12-14
+120,Home & Garden Product 120,Home & Garden,259.84,HomeBase,2025-04-02
+121,Home & Garden Product 121,Home & Garden,39.17,AutoParts,2025-08-05
+122,Books Product 122,Books,17.27,AutoParts,2025-03-02
+123,Fashion Product 123,Fashion,248.88,BeautyWorld,2025-06-14
+124,Books Product 124,Books,38.35,BookLand,2024-11-17
+125,Fashion Product 125,Fashion,84.53,BookLand,2025-02-22
+126,Beauty Product 126,Beauty,78.16,FashionPlus,2025-08-02
+127,Electronics Product 127,Electronics,593.58,BookLand,2025-06-18
+128,Electronics Product 128,Electronics,1597.12,HomeBase,2025-06-30
+129,Home & Garden Product 129,Home & Garden,172.51,FashionPlus,2024-10-20
+130,Electronics Product 130,Electronics,225.13,BookLand,2024-12-30
+131,Automotive Product 131,Automotive,94.92,SportZone,2025-08-26
+132,Electronics Product 132,Electronics,1284.17,AutoParts,2024-11-06
+133,Beauty Product 133,Beauty,11.08,BeautyWorld,2025-04-25
+134,Sports Product 134,Sports,403.66,AutoParts,2025-08-05
+135,Electronics Product 135,Electronics,1699.55,FashionPlus,2025-04-23
+136,Automotive Product 136,Automotive,160.25,TechCorp,2024-12-29
+137,Fashion Product 137,Fashion,57.27,SportZone,2025-03-13
+138,Books Product 138,Books,9.03,HomeBase,2025-04-29
+139,Home & Garden Product 139,Home & Garden,446.07,BookLand,2025-09-04
+140,Sports Product 140,Sports,356.8,FashionPlus,2025-03-03
+141,Beauty Product 141,Beauty,191.47,HomeBase,2025-07-30
+142,Books Product 142,Books,20.58,TechCorp,2025-02-09
+143,Automotive Product 143,Automotive,1267.85,SportZone,2024-10-26
+144,Books Product 144,Books,10.11,FashionPlus,2025-09-03
+145,Fashion Product 145,Fashion,213.38,AutoParts,2025-04-24
+146,Automotive Product 146,Automotive,371.6,AutoParts,2025-06-16
+147,Home & Garden Product 147,Home & Garden,645.73,BookLand,2025-01-01
+148,Books Product 148,Books,19.18,BookLand,2025-05-05
+149,Beauty Product 149,Beauty,120.82,AutoParts,2025-02-15
+150,Electronics Product 150,Electronics,1120.51,BookLand,2025-04-06
+151,Beauty Product 151,Beauty,16.4,HomeBase,2025-01-13
+152,Beauty Product 152,Beauty,89.06,TechCorp,2025-03-15
+153,Books Product 153,Books,15.89,AutoParts,2025-09-02
+154,Automotive Product 154,Automotive,1304.39,FashionPlus,2025-03-31
+155,Fashion Product 155,Fashion,414.29,BookLand,2025-08-10
+156,Sports Product 156,Sports,391.33,FashionPlus,2025-07-22
+157,Books Product 157,Books,27.45,BookLand,2025-03-29
+158,Sports Product 158,Sports,199.34,AutoParts,2025-07-04
+159,Books Product 159,Books,31.66,SportZone,2025-07-08
+160,Beauty Product 160,Beauty,184.19,FashionPlus,2025-05-18
+161,Sports Product 161,Sports,310.6,BookLand,2025-05-01
+162,Fashion Product 162,Fashion,84.24,FashionPlus,2025-04-30
+163,Automotive Product 163,Automotive,109.87,SportZone,2025-07-25
+164,Electronics Product 164,Electronics,669.29,AutoParts,2025-01-07
+165,Electronics Product 165,Electronics,1046.7,FashionPlus,2025-05-30
+166,Fashion Product 166,Fashion,152.56,BookLand,2025-03-12
+167,Electronics Product 167,Electronics,172.24,FashionPlus,2025-01-25
+168,Electronics Product 168,Electronics,713.72,SportZone,2024-12-28
+169,Electronics Product 169,Electronics,211.3,SportZone,2024-11-09
+170,Home & Garden Product 170,Home & Garden,663.97,HomeBase,2025-02-07
+171,Home & Garden Product 171,Home & Garden,458.51,FashionPlus,2025-08-23
+172,Sports Product 172,Sports,353.79,FashionPlus,2024-12-25
+173,Automotive Product 173,Automotive,1416.19,HomeBase,2025-07-25
+174,Electronics Product 174,Electronics,785.76,SportZone,2025-06-30
+175,Home & Garden Product 175,Home & Garden,85.09,FashionPlus,2024-10-03
+176,Automotive Product 176,Automotive,755.91,TechCorp,2024-11-11
+177,Sports Product 177,Sports,388.81,AutoParts,2025-05-16
+178,Fashion Product 178,Fashion,86.78,BeautyWorld,2025-07-22
+179,Beauty Product 179,Beauty,176.35,BeautyWorld,2025-04-28
+180,Electronics Product 180,Electronics,592.96,HomeBase,2025-08-01
+181,Electronics Product 181,Electronics,1368.41,TechCorp,2025-02-16
+182,Books Product 182,Books,19.3,SportZone,2025-01-13
+183,Home & Garden Product 183,Home & Garden,512.96,BeautyWorld,2024-09-26
+184,Fashion Product 184,Fashion,70.31,BookLand,2024-11-24
+185,Automotive Product 185,Automotive,765.59,TechCorp,2024-11-06
+186,Home & Garden Product 186,Home & Garden,374.29,FashionPlus,2024-11-04
+187,Books Product 187,Books,40.37,TechCorp,2025-08-01
+188,Sports Product 188,Sports,518.9,BeautyWorld,2025-07-03
+189,Fashion Product 189,Fashion,284.99,SportZone,2025-05-17
+190,Automotive Product 190,Automotive,1087.89,TechCorp,2024-09-19
+191,Electronics Product 191,Electronics,1746.04,BookLand,2025-05-17
+192,Books Product 192,Books,17.06,BeautyWorld,2024-11-28
+193,Automotive Product 193,Automotive,923.4,FashionPlus,2024-12-14
+194,Electronics Product 194,Electronics,316.37,AutoParts,2024-12-16
+195,Sports Product 195,Sports,449.69,SportZone,2024-11-17
+196,Books Product 196,Books,35.08,BeautyWorld,2024-09-19
+197,Sports Product 197,Sports,435.09,BookLand,2024-10-21
+198,Electronics Product 198,Electronics,1785.92,SportZone,2025-03-07
+199,Home & Garden Product 199,Home & Garden,303.71,TechCorp,2025-03-23
+200,Electronics Product 200,Electronics,267.45,FashionPlus,2025-06-17

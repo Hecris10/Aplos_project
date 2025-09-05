@@ -1,0 +1,32 @@
+{
+  "18-25": {
+    "avg_spent": 3167.92,
+    "total_spent": 487859.36,
+    "avg_orders": 4.81,
+    "churn_rate": 0.7
+  },
+  "26-35": {
+    "avg_spent": 3447.14,
+    "total_spent": 737688.95,
+    "avg_orders": 5.08,
+    "churn_rate": 0.74
+  },
+  "36-50": {
+    "avg_spent": 3550.06,
+    "total_spent": 1388075.18,
+    "avg_orders": 4.99,
+    "churn_rate": 0.72
+  },
+  "51-65": {
+    "avg_spent": 3748.56,
+    "total_spent": 719723.42,
+    "avg_orders": 5.1,
+    "churn_rate": 0.78
+  },
+  "65+": {
+    "avg_spent": 3924.63,
+    "total_spent": 176608.52,
+    "avg_orders": 5.4,
+    "churn_rate": 0.78
+  }
+}

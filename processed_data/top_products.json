@@ -1,0 +1,162 @@
+[
+  {
+    "product_id": 66,
+    "name": "Electronics Product 66",
+    "category": "Electronics",
+    "total_quantity_sold": 55,
+    "total_revenue": 94904.21,
+    "number_of_sales": 21
+  },
+  {
+    "product_id": 198,
+    "name": "Electronics Product 198",
+    "category": "Electronics",
+    "total_quantity_sold": 56,
+    "total_revenue": 89613.6,
+    "number_of_sales": 29
+  },
+  {
+    "product_id": 33,
+    "name": "Electronics Product 33",
+    "category": "Electronics",
+    "total_quantity_sold": 59,
+    "total_revenue": 87130.64,
+    "number_of_sales": 38
+  },
+  {
+    "product_id": 154,
+    "name": "Automotive Product 154",
+    "category": "Automotive",
+    "total_quantity_sold": 74,
+    "total_revenue": 86393.02,
+    "number_of_sales": 35
+  },
+  {
+    "product_id": 135,
+    "name": "Electronics Product 135",
+    "category": "Electronics",
+    "total_quantity_sold": 55,
+    "total_revenue": 83683.63,
+    "number_of_sales": 28
+  },
+  {
+    "product_id": 173,
+    "name": "Automotive Product 173",
+    "category": "Automotive",
+    "total_quantity_sold": 63,
+    "total_revenue": 80936.05,
+    "number_of_sales": 30
+  },
+  {
+    "product_id": 119,
+    "name": "Electronics Product 119",
+    "category": "Electronics",
+    "total_quantity_sold": 59,
+    "total_revenue": 68929.74,
+    "number_of_sales": 26
+  },
+  {
+    "product_id": 191,
+    "name": "Electronics Product 191",
+    "category": "Electronics",
+    "total_quantity_sold": 41,
+    "total_revenue": 65427.6,
+    "number_of_sales": 22
+  },
+  {
+    "product_id": 23,
+    "name": "Automotive Product 23",
+    "category": "Automotive",
+    "total_quantity_sold": 54,
+    "total_revenue": 58143.12,
+    "number_of_sales": 29
+  },
+  {
+    "product_id": 181,
+    "name": "Electronics Product 181",
+    "category": "Electronics",
+    "total_quantity_sold": 48,
+    "total_revenue": 58024.63,
+    "number_of_sales": 22
+  },
+  {
+    "product_id": 97,
+    "name": "Electronics Product 97",
+    "category": "Electronics",
+    "total_quantity_sold": 42,
+    "total_revenue": 56661.79,
+    "number_of_sales": 26
+  },
+  {
+    "product_id": 94,
+    "name": "Electronics Product 94",
+    "category": "Electronics",
+    "total_quantity_sold": 52,
+    "total_revenue": 55736.71,
+    "number_of_sales": 32
+  },
+  {
+    "product_id": 132,
+    "name": "Electronics Product 132",
+    "category": "Electronics",
+    "total_quantity_sold": 48,
+    "total_revenue": 55682.34,
+    "number_of_sales": 19
+  },
+  {
+    "product_id": 47,
+    "name": "Automotive Product 47",
+    "category": "Automotive",
+    "total_quantity_sold": 45,
+    "total_revenue": 54038.45,
+    "number_of_sales": 23
+  },
+  {
+    "product_id": 190,
+    "name": "Automotive Product 190",
+    "category": "Automotive",
+    "total_quantity_sold": 54,
+    "total_revenue": 52269.07,
+    "number_of_sales": 25
+  },
+  {
+    "product_id": 61,
+    "name": "Electronics Product 61",
+    "category": "Electronics",
+    "total_quantity_sold": 62,
+    "total_revenue": 50286.47,
+    "number_of_sales": 34
+  },
+  {
+    "product_id": 143,
+    "name": "Automotive Product 143",
+    "category": "Automotive",
+    "total_quantity_sold": 44,
+    "total_revenue": 49395.7,
+    "number_of_sales": 23
+  },
+  {
+    "product_id": 39,
+    "name": "Automotive Product 39",
+    "category": "Automotive",
+    "total_quantity_sold": 54,
+    "total_revenue": 49179.52,
+    "number_of_sales": 32
+  },
+  {
+    "product_id": 26,
+    "name": "Electronics Product 26",
+    "category": "Electronics",
+    "total_quantity_sold": 43,
+    "total_revenue": 47921.84,
+    "number_of_sales": 24
+  },
+  {
+    "product_id": 128,
+    "name": "Electronics Product 128",
+    "category": "Electronics",
+    "total_quantity_sold": 32,
+    "total_revenue": 46957.76,
+    "number_of_sales": 20
+  }
+]

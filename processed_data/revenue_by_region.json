@@ -1,0 +1,27 @@
+{
+  "Central": {
+    "total_revenue": 624149.75,
+    "total_sales": 823,
+    "avg_order_value": 758.38
+  },
+  "East": {
+    "total_revenue": 673923.07,
+    "total_sales": 993,
+    "avg_order_value": 678.67
+  },
+  "North": {
+    "total_revenue": 892655.61,
+    "total_sales": 1279,
+    "avg_order_value": 697.93
+  },
+  "South": {
+    "total_revenue": 595433.35,
+    "total_sales": 873,
+    "avg_order_value": 682.05
+  },
+  "West": {
+    "total_revenue": 723793.65,
+    "total_sales": 1032,
+    "avg_order_value": 701.35
+  }
+}
