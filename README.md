@@ -31,9 +31,9 @@ See `ontology/retail_ontology.md` for detailed entity relationships.
 ### 1. Generate Data (Python Pipeline)
 ```bash
 cd python_pipeline/
-pip install -r requirements.txt
-python generate_data.py    # Generates CSV files
-python etl_pipeline.py       # Processes data and exports JSON
+pip3 install -r requirements.txt  # Or pip install -r requirements.txt
+python3 generate_data.py    #  Or python generate_data.py | Generates CSV files 
+python3 etl_pipeline.py       #  Or python etl_pipeline.py  | Processes data and exports JSON
 ```
 
 ### 2. Start API Server (TypeScript)
