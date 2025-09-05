@@ -1,11 +1,16 @@
 import { Dashboard } from './components/Dashboard';
 import './App.css';
+import { QueryClient, QueryClientProvider } from "@tanstack/react-query";
+
+const queryClient = new QueryClient();
 
 function App() {
   return (
-    <div className="App">
-      <Dashboard />
-    </div>
+    <QueryClientProvider client={queryClient}>
+      <div className="App">
+        <Dashboard />
+      </div>
+    </QueryClientProvider>
   );
 }
 

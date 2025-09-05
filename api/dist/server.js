@@ -31,6 +31,7 @@ const parseFilters = (query) => {
         filters.endDate = query.endDate;
     if (query.limit)
         filters.limit = parseInt(query.limit);
+    console.log('Parsed filters:', filters);
     return filters;
 };
 // Routes
@@ -88,6 +89,16 @@ app.get('/api/sales-by-region', (req, res) => {
     const response = dataService.getSalesByRegion(filters);
     res.json(response);
 });
+// Get all available regions
+app.get('/api/available-regions', (req, res) => {
+    const response = dataService.getAvailableRegions();
+    res.json(response);
+});
+// Get all available categories
+app.get('/api/available-categories', (req, res) => {
+    const response = dataService.getAvailableCategories();
+    res.json(response);
+});
 // Refresh cache
 app.post('/api/refresh-cache', (req, res) => {
     const response = dataService.refreshCache();
@@ -119,6 +130,8 @@ app.use('*', (req, res) => {
             'GET /api/monthly-trends',
             'GET /api/business-insights',
             'GET /api/sales-by-region',
+            'GET /api/available-regions',
+            'GET /api/available-categories',
             'POST /api/refresh-cache'
         ]
     });

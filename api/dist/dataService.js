@@ -9,8 +9,77 @@ const path_1 = __importDefault(require("path"));
 class DataService {
     constructor() {
         this.dataPath = path_1.default.join(__dirname, '../../processed_data');
+        this.rawDataPath = path_1.default.join(__dirname, '../../data');
         this.cache = new Map();
+        this.rawCache = new Map();
         this.loadCache();
+        this.loadRawCache();
+    }
+    loadRawCache() {
+        try {
+            // Load raw CSV data
+            const csvFiles = ['sales.csv', 'products.csv', 'customers.csv'];
+            csvFiles.forEach(file => {
+                const filePath = path_1.default.join(this.rawDataPath, file);
+                if (fs_1.default.existsSync(filePath)) {
+                    const data = this.parseCSV(filePath);
+                    this.rawCache.set(file.replace('.csv', ''), data);
+                }
+            });
+            console.log('Raw data cache loaded successfully');
+        }
+        catch (error) {
+            console.error('Error loading raw data cache:', error);
+        }
+    }
+    parseCSV(filePath) {
+        const content = fs_1.default.readFileSync(filePath, 'utf8');
+        const lines = content.trim().split('\n');
+        const headers = lines[0].split(',').map(h => h.trim());
+        return lines.slice(1).map(line => {
+            const values = line.split(',').map(v => v.trim());
+            const record = {};
+            headers.forEach((header, index) => {
+                const value = values[index];
+                // Try to parse numbers
+                if (!isNaN(Number(value)) && value !== '') {
+                    record[header] = Number(value);
+                }
+                else {
+                    record[header] = value;
+                }
+            });
+            return record;
+        });
+    }
+    filterSalesData(filters) {
+        const sales = this.rawCache.get('sales') || [];
+        const customers = this.rawCache.get('customers') || [];
+        const products = this.rawCache.get('products') || [];
+        return sales.filter(sale => {
+            // Filter by region (need to join with customers)
+            if (filters.region) {
+                const customer = customers.find(c => c.id === sale.customer_id);
+                if (!customer || customer.region !== filters.region) {
+                    return false;
+                }
+            }
+            // Filter by date range
+            if (filters.startDate && sale.date < filters.startDate) {
+                return false;
+            }
+            if (filters.endDate && sale.date > filters.endDate) {
+                return false;
+            }
+            // Filter by category (need to join with products)
+            if (filters.category) {
+                const product = products.find(p => p.id === sale.product_id);
+                if (!product || product.category !== filters.category) {
+                    return false;
+                }
+            }
+            return true;
+        });
     }
     loadCache() {
         try {
@@ -72,18 +141,52 @@ class DataService {
     }
     getTopProducts(filters) {
         try {
-            let data = this.cache.get('top_products') || [];
-            if (!data.length) {
-                return this.createErrorResponse('Top products data not found');
+            // If no filters (except limit), use cached data
+            if (!filters || (Object.keys(filters).length === 1 && filters.limit)) {
+                let data = this.cache.get('top_products') || [];
+                if (!data.length) {
+                    return this.createErrorResponse('Top products data not found');
+                }
+                if (filters?.limit) {
+                    data = data.slice(0, filters.limit);
+                }
+                return this.createResponse(data, 'Top products data retrieved successfully');
             }
-            // Apply filters
-            if (filters?.category) {
-                data = data.filter(product => product.category === filters.category);
-            }
+            // Apply filters to raw data and calculate top products
+            const filteredSales = this.filterSalesData(filters);
+            const products = this.rawCache.get('products') || [];
+            // Aggregate product sales
+            const productAggregation = {};
+            filteredSales.forEach(sale => {
+                if (!productAggregation[sale.product_id]) {
+                    const product = products.find(p => p.id === sale.product_id);
+                    productAggregation[sale.product_id] = {
+                        revenue: 0,
+                        quantity: 0,
+                        sales: 0,
+                        product
+                    };
+                }
+                productAggregation[sale.product_id].revenue += sale.total_amount;
+                productAggregation[sale.product_id].quantity += sale.quantity;
+                productAggregation[sale.product_id].sales += 1;
+            });
+            // Convert to TopProduct format and sort by revenue
+            let topProducts = Object.entries(productAggregation)
+                .filter(([_, data]) => data.product)
+                .map(([productId, data]) => ({
+                product_id: parseInt(productId),
+                name: data.product.name,
+                category: data.product.category,
+                total_revenue: data.revenue,
+                total_quantity_sold: data.quantity,
+                number_of_sales: data.sales
+            }))
+                .sort((a, b) => b.total_revenue - a.total_revenue);
             if (filters?.limit) {
-                data = data.slice(0, filters.limit);
+                topProducts = topProducts.slice(0, filters.limit);
             }
-            return this.createResponse(data, 'Top products data retrieved successfully');
+            return this.createResponse(topProducts, 'Filtered top products data retrieved successfully');
         }
         catch (error) {
             return this.createErrorResponse(`Error retrieving top products: ${error}`);
@@ -169,20 +272,39 @@ class DataService {
         }
     }
     getSalesByRegion(filters) {
-        // This would be used for the React charts
         try {
-            const regionData = this.cache.get('revenue_by_region');
-            if (!regionData) {
-                return this.createErrorResponse('Sales by region data not found');
-            }
-            // Transform data for charts
-            const chartData = Object.entries(regionData).map(([region, data]) => ({
+            console.log('getSalesByRegion called with filters:', filters);
+            // Always process raw data to ensure consistency and filtering capability
+            console.log('Processing raw data for sales by region');
+            const filteredSales = this.filterSalesData(filters || {});
+            const customers = this.rawCache.get('customers') || [];
+            console.log('Filtered sales count:', filteredSales.length);
+            // Aggregate filtered data by region
+            const regionAggregation = {};
+            filteredSales.forEach(sale => {
+                // Join with customer to get region
+                const customer = customers.find(c => c.id === sale.customer_id);
+                if (!customer)
+                    return;
+                const region = customer.region;
+                if (!regionAggregation[region]) {
+                    regionAggregation[region] = { revenue: 0, sales: 0 };
+                }
+                regionAggregation[region].revenue += sale.total_amount;
+                regionAggregation[region].sales += 1;
+            });
+            console.log('Region aggregation result:', regionAggregation);
+            // Transform to chart format
+            const chartData = Object.entries(regionAggregation).map(([region, data]) => ({
                 region,
-                revenue: data.total_revenue,
-                sales: data.total_sales,
-                avgOrderValue: data.avg_order_value
+                revenue: data.revenue,
+                sales: data.sales,
+                avgOrderValue: data.sales > 0 ? data.revenue / data.sales : 0
             }));
-            return this.createResponse(chartData, 'Sales by region chart data retrieved successfully');
+            const message = filters && Object.keys(filters).length > 0
+                ? 'Filtered sales by region chart data retrieved successfully'
+                : 'Sales by region chart data retrieved successfully';
+            return this.createResponse(chartData, message);
         }
         catch (error) {
             return this.createErrorResponse(`Error retrieving sales by region: ${error}`);
@@ -191,11 +313,33 @@ class DataService {
     refreshCache() {
         try {
             this.cache.clear();
+            this.rawCache.clear();
             this.loadCache();
+            this.loadRawCache();
             return this.createResponse('Cache refreshed successfully', 'Data cache has been refreshed');
         }
         catch (error) {
             return this.createErrorResponse(`Error refreshing cache: ${error}`);
+        }
+    }
+    getAvailableRegions() {
+        try {
+            const customers = this.rawCache.get('customers') || [];
+            const regions = Array.from(new Set(customers.map(customer => customer.region))).sort();
+            return this.createResponse(regions, 'Available regions retrieved successfully');
+        }
+        catch (error) {
+            return this.createErrorResponse(`Error retrieving available regions: ${error}`);
+        }
+    }
+    getAvailableCategories() {
+        try {
+            const products = this.rawCache.get('products') || [];
+            const categories = Array.from(new Set(products.map(product => product.category))).sort();
+            return this.createResponse(categories, 'Available categories retrieved successfully');
+        }
+        catch (error) {
+            return this.createErrorResponse(`Error retrieving available categories: ${error}`);
         }
     }
     getHealthCheck() {

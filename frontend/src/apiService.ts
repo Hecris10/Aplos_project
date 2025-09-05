@@ -84,6 +84,15 @@ export class ApiService {
     return response.data;
   }
 
+  static async getAvailableRegions(): Promise<ApiResponse<string[]>> {
+    const response = await apiClient.get('/available-regions');
+    return response.data;
+  }
+
+  static async getAvailableCategories(): Promise<ApiResponse<string[]>> {
+    const response = await apiClient.get('/available-categories');
+    return response.data;
+  }
 
   static async refreshCache(): Promise<ApiResponse<string>> {
     const response = await apiClient.post('/refresh-cache');

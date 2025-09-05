@@ -32,6 +32,13 @@ export interface RegionRevenue {
   avg_order_value: number;
 }
 
+export interface RegionChartData {
+  region: string;
+  revenue: number;
+  sales: number;
+  avgOrderValue: number;
+}
+
 export interface TopProduct {
   product_id: number;
   name: string;
