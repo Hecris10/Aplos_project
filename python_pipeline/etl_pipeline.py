@@ -11,7 +11,7 @@ from datetime import datetime, timedelta
 from typing import Dict, List, Any, Optional
 
 class RetailETLPipeline:
-    def __init__(self, data_dir: str = 'data'):
+    def __init__(self, data_dir: str = '../data'):
         self.data_dir = data_dir
         self.customers_df: Optional[pd.DataFrame] = None
         self.products_df: Optional[pd.DataFrame] = None
@@ -313,7 +313,7 @@ class RetailETLPipeline:
         
         return insights
     
-    def export_data(self, output_dir: str = 'processed_data'):
+    def export_data(self, output_dir: str = '../processed_data'):
         """Export processed data to JSON files for the API"""
         print("Exporting processed data...")
         

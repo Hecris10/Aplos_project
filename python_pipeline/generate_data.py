@@ -163,28 +163,28 @@ def main():
     """Generate all datasets and save to CSV files"""
     print("Generating retail network datasets...")
     
-    # Create data directory if it doesn't exist
-    os.makedirs('data', exist_ok=True)
+    # Create data directory if it doesn't exist (one folder up)
+    os.makedirs('../data', exist_ok=True)
     
     # Generate datasets
     print("1. Generating customers...")
     customers_df = generate_customers()
-    customers_df.to_csv('data/customers.csv', index=False)
+    customers_df.to_csv('../data/customers.csv', index=False)
     print(f"   Generated {len(customers_df)} customers")
     
     print("2. Generating products...")
     products_df = generate_products()
-    products_df.to_csv('data/products.csv', index=False)
+    products_df.to_csv('../data/products.csv', index=False)
     print(f"   Generated {len(products_df)} products")
     
     print("3. Generating sales...")
     sales_df = generate_sales(customers_df, products_df)
-    sales_df.to_csv('data/sales.csv', index=False)
+    sales_df.to_csv('../data/sales.csv', index=False)
     print(f"   Generated {len(sales_df)} sales records")
     
     print("4. Generating inventory...")
     inventory_df = generate_inventory(products_df)
-    inventory_df.to_csv('data/inventory.csv', index=False)
+    inventory_df.to_csv('../data/inventory.csv', index=False)
     print(f"   Generated {len(inventory_df)} inventory records")
     
     # Display sample data
@@ -201,7 +201,7 @@ def main():
     print("\nInventory (first 5 rows):")
     print(inventory_df.head())
     
-    print(f"\nDatasets saved to 'data/' directory")
+    print(f"\nDatasets saved to '../data/' directory")
 
 if __name__ == "__main__":
     main()

@@ -33,18 +33,20 @@ See `ontology/retail_ontology.md` for detailed entity relationships.
 cd python_pipeline/
 pip install -r requirements.txt
 python generate_data.py    # Generates CSV files
-python etl_pipeline.py     # Processes data and exports JSON
+python etl_pipeline.py       # Processes data and exports JSON
 ```
 
 ### 2. Start API Server (TypeScript)
 ```bash
-cd api/
+cd ../api/
 npm install
 npm run build
 npm start                  # Runs on http://localhost:3001
 ```
 
 ### 3. Start Frontend (React + Vite)
+#### Open a new Terminal instance
+
 ```bash
 cd frontend/
 npm install
