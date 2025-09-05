@@ -8,16 +8,16 @@ import numpy as np
 import json
 import os
 from datetime import datetime, timedelta
-from typing import Dict, List, Any
+from typing import Dict, List, Any, Optional
 
 class RetailETLPipeline:
     def __init__(self, data_dir: str = 'data'):
         self.data_dir = data_dir
-        self.customers_df = None
-        self.products_df = None
-        self.sales_df = None
-        self.inventory_df = None
-        self.processed_data = {}
+        self.customers_df: Optional[pd.DataFrame] = None
+        self.products_df: Optional[pd.DataFrame] = None
+        self.sales_df: Optional[pd.DataFrame] = None
+        self.inventory_df: Optional[pd.DataFrame] = None
+        self.processed_data: Dict[str, Any] = {}
         
     def load_data(self):
         """Load CSV data into pandas DataFrames"""
@@ -41,6 +41,10 @@ class RetailETLPipeline:
     def clean_data(self):
         """Handle inconsistencies, missing values, duplicates, and outliers"""
         print("Cleaning data...")
+        
+        # Ensure DataFrames are loaded
+        if self.customers_df is None or self.products_df is None or self.sales_df is None or self.inventory_df is None:
+            raise ValueError("Data must be loaded before cleaning. Call load_data() first.")
         
         # Clean customers data
         print("  Cleaning customers...")
@@ -128,6 +132,10 @@ class RetailETLPipeline:
         """Generate consolidated metrics and business insights"""
         print("Generating consolidated metrics...")
         
+        # Ensure DataFrames are loaded and cleaned
+        if self.customers_df is None or self.products_df is None or self.sales_df is None or self.inventory_df is None:
+            raise ValueError("Data must be loaded and cleaned before generating metrics.")
+        
         # Revenue by region
         sales_with_customer = self.sales_df.merge(self.customers_df, left_on='customer_id', right_on='id', suffixes=('', '_customer'))
         revenue_by_region = sales_with_customer.groupby('region')['total_amount'].agg(['sum', 'count', 'mean']).round(2)
@@ -168,7 +176,7 @@ class RetailETLPipeline:
         
         # Customer churn analysis (customers who haven't purchased in last 90 days)
         cutoff_date = datetime.now() - timedelta(days=90)
-        customer_metrics['days_since_last_purchase'] = (datetime.now() - pd.to_datetime(customer_metrics['last_purchase'])).dt.days
+        customer_metrics['days_since_last_purchase'] = (pd.Timestamp.now() - pd.to_datetime(customer_metrics['last_purchase'])).dt.days
         customer_metrics['is_churned'] = customer_metrics['days_since_last_purchase'] > 90
         
         # Age group analysis
@@ -178,7 +186,7 @@ class RetailETLPipeline:
             labels=['18-25', '26-35', '36-50', '51-65', '65+']
         )
         
-        age_group_analysis = customer_metrics.groupby('age_group').agg({
+        age_group_analysis = customer_metrics.groupby('age_group', observed=True).agg({
             'total_spent': ['mean', 'sum'],
             'number_of_orders': 'mean',
             'is_churned': 'mean'
